@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: book_project
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: H2O@123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: gunicorn book_project.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DEBUG=True
+      - DB_NAME=book_project
+      - DB_USER=postgres
+      - DB_PASSWORD=H2O@123
+      - DB_HOST=db
+      - DB_PORT=5432
+
+volumes:
+  postgres_data:
