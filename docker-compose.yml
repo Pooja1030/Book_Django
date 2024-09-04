@@ -26,6 +26,7 @@ services:
       - DB_PASSWORD=H2O@123
       - DB_HOST=db
       - DB_PORT=5432
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,*.yourdomain.com
 
 volumes:
   postgres_data:

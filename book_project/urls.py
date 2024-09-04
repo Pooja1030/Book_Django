@@ -7,7 +7,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
     TokenVerifyView
 )
-from books.views import LogoutView, UserProfileView
+from books.views import UserProfileView
 
 urlpatterns = [
     path('admin/', admin.site.urls),

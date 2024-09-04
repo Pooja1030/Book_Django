@@ -18,16 +18,15 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = User(
             username=validated_data['username'],
-            password=make_password(validated_data['password']),
-            is_active=True
         )
+        user.set_password(validated_data['password'])
         user.save()
         return user
     
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'username', 'email')  # Add any other fields you want to include
+        fields = ('id', 'username', 'email')  
 
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
@@ -35,8 +34,8 @@ class AuthorSerializer(serializers.ModelSerializer):
         fields = ['id', 'name']
 
 class BookSerializer(serializers.ModelSerializer):
-    author = AuthorSerializer(read_only=True)
+    author_id = serializers.PrimaryKeyRelatedField(queryset=Author.objects.all(), source='author')
 
     class Meta:
         model = Book
-        fields = ['id', 'title', 'author', 'price', 'rating', 'stock']
+        fields = ['id', 'title', 'author_id', 'price', 'rating', 'stock']
