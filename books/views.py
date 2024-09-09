@@ -1,14 +1,20 @@
+from firebase_admin import firestore
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.utils.decorators import method_decorator
 from .models import Author, Book
-from .serializers import AuthorSerializer, BookSerializer, UserRegistrationSerializer, UserSerializer
+from .serializers import AuthorSerializer, BookSerializer, UserRegistrationSerializer, UserSerializer, MessageSerializer
 from rest_framework import generics
+from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework import status
 import logging
+
+
+db = firestore.client()
+
 logger = logging.getLogger(__name__)
 
 def get_tokens_for_user(user):
@@ -54,6 +60,67 @@ class UserProfileView(generics.RetrieveAPIView):
         serializer = self.get_serializer(user)
         return Response(serializer.data)
     
+
+# Message sending using Firebase
+class SendMessageView(generics.GenericAPIView):
+    serializer_class = MessageSerializer
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            sender = request.user
+            receiver_id = serializer.validated_data['receiver_id']
+            content = serializer.validated_data['content']
+
+              # Log IDs for debugging
+            logger.info(f'Sender ID: {sender.id}')
+            logger.info(f'Receiver ID: {receiver_id}')
+        
+            try:
+                receiver = User.objects.get(id=receiver_id)
+            except User.DoesNotExist:
+                return Response({'error': 'Receiver not found'}, status=status.HTTP_404_NOT_FOUND)
+            
+            try:
+                # Save message to Firestore
+                db.collection('messages').add({
+                    'sender_id': sender.id,
+                    'receiver_id': receiver.id,
+                    'content': content,
+                    'timestamp': firestore.SERVER_TIMESTAMP
+                })
+            except Exception as e:
+                # Log the Firestore error
+                logger.error(f'Firestore error: {e}')
+                return Response({'error': 'Failed to send message'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+            return Response({'message': 'Message sent successfully'}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+class GetMessagesView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, *args, **kwargs):
+        user = request.user
+
+        # Fetch messages from Firestore where user is the receiver
+        messages_ref = db.collection('messages').where('receiver_id', '==', user.id).stream()
+        
+        message_list = []
+        for message in messages_ref:
+            message_data = message.to_dict()
+            message_list.append({
+                'sender_id': message_data['sender_id'],
+                'content': message_data['content'],
+                'timestamp': message_data['timestamp']
+            })
+
+        return Response(message_list, status=status.HTTP_200_OK)
+
+
 
 
 class AuthorListCreate(generics.ListCreateAPIView):

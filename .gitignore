@@ -11,6 +11,10 @@ db.sqlite3
 staticfiles/
 media/
 
+
+# .firease
+firebase/firebase-adminsdk.json
+
 # Environments
 .env
 venv/

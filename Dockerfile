@@ -13,6 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code into the container
 COPY . /app/
 
+# Copy the Firebase credentials into the container
+COPY firebase /app/firebase
+
 RUN python manage.py collectstatic --noinput
 
 
