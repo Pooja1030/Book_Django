@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
 from .models import Author, Book
 
+
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
@@ -28,6 +29,14 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ('id', 'username', 'email')  
 
+
+
+class MessageSerializer(serializers.Serializer):
+    receiver_id = serializers.IntegerField()
+    content = serializers.CharField()
+
+    
+
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
@@ -39,3 +48,10 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ['id', 'title', 'author_id', 'price', 'rating', 'stock']
+
+
+class GeminiPredictionSerializer(serializers.Serializer):
+    input_data = serializers.ListField(
+        child=serializers.FloatField()
+    )
+    prediction = serializers.FloatField(read_only=True)

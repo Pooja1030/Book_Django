@@ -11,6 +11,13 @@ db.sqlite3
 staticfiles/
 media/
 
+
+# .firease
+firebase/firebase-adminsdk.json
+book_project/book-b860d-4c401e9f8a95.json
+
+
+
 # Environments
 .env
 venv/
