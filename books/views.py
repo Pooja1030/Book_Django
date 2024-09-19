@@ -152,6 +152,9 @@ class LogoutView(generics.GenericAPIView):
             except Exception as e:
                 return Response({"error": str(e)}, status=400)
         return Response({"error": "Refresh token required"}, status=400)
+    
+
+    
 
 class GeminiPredictionView(generics.GenericAPIView):
     serializer_class = GeminiPredictionSerializer

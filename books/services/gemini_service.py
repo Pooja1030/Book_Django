@@ -11,7 +11,7 @@ def predict_gemini_model(instance):
         client = aiplatform.gapic.PredictionServiceClient()
 
         # Preparing the input data
-        endpoint = f"projects/model_id//location/endpoints/{model_id}"
+        endpoint = f"projects/model_id//location/endpoints/{model_id}"   #add model_id,location
         instances = [instance]
 
         # Perform the prediction

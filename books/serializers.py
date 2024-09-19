@@ -50,6 +50,7 @@ class BookSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'author_id', 'price', 'rating', 'stock']
 
 
+#Gemini Prediction
 class GeminiPredictionSerializer(serializers.Serializer):
     input_data = serializers.ListField(
         child=serializers.FloatField()

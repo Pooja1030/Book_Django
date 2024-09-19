@@ -13,6 +13,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '*').split(',')
 
+
+# Gemini credentials
 GOOGLE_APPLICATION_CREDENTIALS = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', '/app/book-b860d-4c401e9f8a95.json')
 
 INSTALLED_APPS = [
