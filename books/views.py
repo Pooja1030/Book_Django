@@ -14,7 +14,6 @@ from .services.gemini_service import predict_gemini_model
 import logging
 
 
-
 db = firestore.client()
 
 logger = logging.getLogger(__name__)
