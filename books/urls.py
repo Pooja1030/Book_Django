@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import AuthorListCreate, BookListCreate, UserRegistrationView,LogoutView, SendMessageView, GetMessagesView, GeminiPredictionView
-from .views import AuthorListCreate, BookListCreate, UserRegistrationView,LogoutView, SendMessageView, GetMessagesView
+
 
 urlpatterns = [
     
