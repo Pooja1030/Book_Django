@@ -152,20 +152,43 @@ class LogoutView(generics.GenericAPIView):
             except Exception as e:
                 return Response({"error": str(e)}, status=400)
         return Response({"error": "Refresh token required"}, status=400)
-    
 
-    
-
+   
 class GeminiPredictionView(generics.GenericAPIView):
     serializer_class = GeminiPredictionSerializer
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
-            input_data = serializer.validated_data['input_data']
+            book = serializer.validated_data['book_id']  # This retrieves the Book instance
+            
+            # Extract relevant book features for prediction
+            input_data = {
+                'stock': int(book.stock),
+                'rating': float(book.rating) if book.rating else 0.0  # Handle null ratings
+            }
+
             try:
+                # Call prediction function and pass book features
                 prediction = predict_gemini_model(input_data)
                 return Response({'prediction': prediction}, status=status.HTTP_200_OK)
-            except Exception as e:
+            except RuntimeError as e:
+                logger.error(f"Prediction error: {str(e)}")
                 return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        logger.error(f'Validation errors: {serializer.errors}')  # Log validation errors
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+# class GeminiPredictionView(generics.GenericAPIView):
+#     serializer_class = GeminiPredictionSerializer
+
+#     def post(self, request, *args, **kwargs):
+#         serializer = self.get_serializer(data=request.data)
+#         if serializer.is_valid():
+#             input_data = serializer.validated_data['input_data']
+#             try:
+#                 prediction = predict_gemini_model(input_data)
+#                 return Response({'prediction': prediction}, status=status.HTTP_200_OK)
+#             except Exception as e:
+#                 return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -1,0 +1,1001 @@
+id,author,title,rating,stock
+1,George R.R. Martin,Oliver Twist,3.7,29
+2,Agatha Christie,The Great Gatsby,3.8,3
+3,Margaret Atwood,Oliver Twist,4.8,13
+4,Mark Twain,Mrs. Dalloway,4.7,31
+5,C.S. Lewis,Fahrenheit 451,3.4,10
+6,Ray Bradbury,Mrs. Dalloway,4.8,35
+7,John Grisham,The Chronicles of Narnia,4.5,73
+8,C.S. Lewis,Oliver Twist,4.2,80
+9,George R.R. Martin,The Handmaid's Tale,4.5,57
+10,Charles Dickens,Fahrenheit 451,4.9,41
+11,Isaac Asimov,Outliers,3.4,95
+12,Virginia Woolf,The Adventures of Tom Sawyer,5,12
+13,Dan Brown,The Shining,4.5,89
+14,Dan Brown,Pride and Prejudice,3.7,37
+15,Isaac Asimov,The Great Gatsby,3.1,30
+16,Isaac Asimov,The Old Man and the Sea,3.3,85
+17,Isaac Asimov,Angels & Demons,3.9,18
+18,Virginia Woolf,Pride and Prejudice,3.5,27
+19,F. Scott Fitzgerald,Outliers,4,45
+20,Margaret Atwood,Mrs. Dalloway,3.1,57
+21,Jane Austen,Angels & Demons,3.1,46
+22,Stephen King,A Game of Thrones,3.5,46
+23,Ernest Hemingway,Oliver Twist,4.4,6
+24,Ray Bradbury,To Kill a Mockingbird,3.4,35
+25,J.K. Rowling,Pride and Prejudice,3,51
+26,Agatha Christie,The Firm,4.6,13
+27,Virginia Woolf,The Adventures of Tom Sawyer,4.1,20
+28,Margaret Atwood,The Old Man and the Sea,4.1,23
+29,C.S. Lewis,A Game of Thrones,4.8,27
+30,J.R.R. Tolkien,Fahrenheit 451,4.3,15
+31,J.R.R. Tolkien,Outliers,3.2,1
+32,Isaac Asimov,Pride and Prejudice,4.3,78
+33,Ray Bradbury,The Great Gatsby,3.9,56
+34,J.R.R. Tolkien,The Adventures of Tom Sawyer,5,43
+35,Stephen King,A Game of Thrones,3.3,96
+36,Dan Brown,Mrs. Dalloway,3.5,11
+37,Stephen King,A Game of Thrones,3.1,16
+38,Ray Bradbury,A Game of Thrones,3.4,61
+39,Ernest Hemingway,Mrs. Dalloway,3.5,63
+40,Harper Lee,The Kite Runner,3.4,78
+41,Stephen King,The Chronicles of Narnia,3.2,4
+42,J.K. Rowling,Outliers,3.2,63
+43,Dan Brown,To Kill a Mockingbird,3,33
+44,Ernest Hemingway,The Shining,4.6,16
+45,Harper Lee,Mrs. Dalloway,3.5,95
+46,Mark Twain,Murder on the Orient Express,4.6,14
+47,C.S. Lewis,The Adventures of Tom Sawyer,3.9,19
+48,Ernest Hemingway,Mrs. Dalloway,3.4,47
+49,J.R.R. Tolkien,The Hobbit,3.4,59
+50,Harper Lee,The Hobbit,3.8,42
+51,Virginia Woolf,The Kite Runner,3.8,13
+52,J.K. Rowling,Mrs. Dalloway,3.6,87
+53,C.S. Lewis,The Old Man and the Sea,3.4,77
+54,Khaled Hosseini,Murder on the Orient Express,4.1,67
+55,George R.R. Martin,Outliers,3.4,61
+56,Ernest Hemingway,The Shining,4.5,71
+57,Ray Bradbury,The Handmaid's Tale,4.6,93
+58,Dan Brown,The Kite Runner,4.5,89
+59,J.R.R. Tolkien,The Shining,3.1,77
+60,Virginia Woolf,Mrs. Dalloway,3,9
+61,J.R.R. Tolkien,The Chronicles of Narnia,3.9,9
+62,Charles Dickens,The Sorcerer's Stone,3.1,74
+63,George R.R. Martin,The Shining,4.5,59
+64,Mark Twain,Foundation,4.2,63
+65,J.R.R. Tolkien,The Hobbit,4.4,93
+66,Isaac Asimov,The Hobbit,3.6,99
+67,Margaret Atwood,Murder on the Orient Express,3.8,47
+68,F. Scott Fitzgerald,The Handmaid's Tale,3,13
+69,J.K. Rowling,The Handmaid's Tale,3.4,90
+70,Charles Dickens,The Shining,4.3,59
+71,Harper Lee,Murder on the Orient Express,3.6,62
+72,Khaled Hosseini,The Great Gatsby,4.4,8
+73,C.S. Lewis,The Shining,4.5,47
+74,J.K. Rowling,Angels & Demons,4,86
+75,Mark Twain,The Old Man and the Sea,4.3,19
+76,Khaled Hosseini,The Shining,3.9,84
+77,Khaled Hosseini,Oliver Twist,3.7,13
+78,Margaret Atwood,The Great Gatsby,3.7,82
+79,Harper Lee,To Kill a Mockingbird,3.5,43
+80,Ray Bradbury,Fahrenheit 451,3.7,33
+81,Harper Lee,Foundation,3.6,83
+82,Charles Dickens,The Great Gatsby,4.2,76
+83,Malcolm Gladwell,Mrs. Dalloway,3.9,53
+84,F. Scott Fitzgerald,The Handmaid's Tale,3.3,80
+85,Agatha Christie,Oliver Twist,4.2,45
+86,Jane Austen,Mrs. Dalloway,3.6,28
+87,F. Scott Fitzgerald,The Chronicles of Narnia,3.2,19
+88,Agatha Christie,Fahrenheit 451,4.4,26
+89,Isaac Asimov,A Game of Thrones,4.2,34
+90,Dan Brown,The Firm,4.3,85
+91,Ray Bradbury,The Kite Runner,3.5,55
+92,Ernest Hemingway,The Old Man and the Sea,3.8,48
+93,Mark Twain,Pride and Prejudice,4.1,57
+94,Ray Bradbury,The Firm,4.6,53
+95,J.K. Rowling,The Firm,3.9,83
+96,Mark Twain,The Shining,4.4,10
+97,Ray Bradbury,The Shining,4.8,36
+98,Stephen King,The Sorcerer's Stone,4.9,51
+99,J.K. Rowling,Mrs. Dalloway,4,3
+100,J.K. Rowling,Foundation,4.1,30
+101,Virginia Woolf,A Game of Thrones,3.3,8
+102,Stephen King,Pride and Prejudice,4.1,8
+103,Malcolm Gladwell,Pride and Prejudice,4.5,94
+104,J.K. Rowling,Pride and Prejudice,3.4,100
+105,Ernest Hemingway,The Firm,3.7,35
+106,Khaled Hosseini,The Hobbit,4.6,66
+107,Ernest Hemingway,The Chronicles of Narnia,4.5,82
+108,Ray Bradbury,Murder on the Orient Express,3.6,15
+109,Ray Bradbury,Pride and Prejudice,3.8,77
+110,Stephen King,The Kite Runner,3.9,8
+111,George R.R. Martin,The Kite Runner,4.3,17
+112,Ray Bradbury,The Handmaid's Tale,3.7,31
+113,Jane Austen,Pride and Prejudice,4.6,17
+114,Virginia Woolf,The Great Gatsby,3.9,74
+115,George R.R. Martin,The Adventures of Tom Sawyer,4.8,93
+116,Charles Dickens,Mrs. Dalloway,3,82
+117,Dan Brown,Foundation,4.6,7
+118,C.S. Lewis,The Old Man and the Sea,3.3,38
+119,Stephen King,The Handmaid's Tale,4.8,93
+120,F. Scott Fitzgerald,To Kill a Mockingbird,4.3,14
+121,Isaac Asimov,The Sorcerer's Stone,3.9,14
+122,Dan Brown,Mrs. Dalloway,4.1,84
+123,Margaret Atwood,The Firm,4.2,4
+124,Khaled Hosseini,The Old Man and the Sea,3.3,91
+125,J.R.R. Tolkien,A Game of Thrones,3.1,58
+126,Ray Bradbury,Outliers,3.3,84
+127,Virginia Woolf,Murder on the Orient Express,3.4,22
+128,Dan Brown,To Kill a Mockingbird,3,59
+129,Ernest Hemingway,Murder on the Orient Express,4.9,21
+130,Dan Brown,The Firm,4.3,82
+131,Malcolm Gladwell,Oliver Twist,3.8,72
+132,Stephen King,The Old Man and the Sea,3.4,77
+133,J.R.R. Tolkien,Outliers,3.4,25
+134,John Grisham,The Handmaid's Tale,3.6,50
+135,Jane Austen,The Sorcerer's Stone,3.7,57
+136,Jane Austen,The Old Man and the Sea,4.1,49
+137,Dan Brown,Murder on the Orient Express,4.8,63
+138,F. Scott Fitzgerald,A Game of Thrones,3.9,95
+139,F. Scott Fitzgerald,Fahrenheit 451,4.9,53
+140,F. Scott Fitzgerald,The Hobbit,3.1,32
+141,Jane Austen,A Game of Thrones,3.7,17
+142,F. Scott Fitzgerald,Oliver Twist,4.5,21
+143,Malcolm Gladwell,Angels & Demons,3.3,38
+144,Malcolm Gladwell,The Handmaid's Tale,3.8,87
+145,Khaled Hosseini,Angels & Demons,4.8,7
+146,Mark Twain,The Shining,4.8,13
+147,Margaret Atwood,Outliers,4.8,38
+148,Ray Bradbury,Angels & Demons,4.7,9
+149,George R.R. Martin,Oliver Twist,3.7,64
+150,Stephen King,The Hobbit,4.6,66
+151,J.K. Rowling,Oliver Twist,4.5,36
+152,Malcolm Gladwell,The Firm,5,88
+153,Mark Twain,Angels & Demons,3.5,67
+154,J.K. Rowling,The Hobbit,3.1,23
+155,F. Scott Fitzgerald,Oliver Twist,4.1,1
+156,Mark Twain,Oliver Twist,3.8,94
+157,John Grisham,The Kite Runner,4.8,58
+158,Mark Twain,The Kite Runner,4.3,9
+159,Khaled Hosseini,Outliers,3.5,35
+160,Ernest Hemingway,To Kill a Mockingbird,4.9,69
+161,Isaac Asimov,The Kite Runner,4.8,14
+162,Stephen King,The Adventures of Tom Sawyer,4.8,19
+163,F. Scott Fitzgerald,The Kite Runner,3.7,57
+164,F. Scott Fitzgerald,The Adventures of Tom Sawyer,4.8,35
+165,F. Scott Fitzgerald,Foundation,3.8,98
+166,Charles Dickens,The Handmaid's Tale,3.6,67
+167,Agatha Christie,The Firm,4.8,88
+168,Virginia Woolf,Angels & Demons,3.3,28
+169,Dan Brown,Outliers,4.8,17
+170,Virginia Woolf,Murder on the Orient Express,4.4,31
+171,Dan Brown,The Hobbit,4.8,53
+172,Jane Austen,The Hobbit,4.3,37
+173,J.R.R. Tolkien,A Game of Thrones,5,49
+174,Ray Bradbury,To Kill a Mockingbird,3.3,17
+175,Charles Dickens,Pride and Prejudice,4.5,82
+176,C.S. Lewis,The Chronicles of Narnia,4.9,94
+177,Harper Lee,The Shining,3.6,70
+178,Isaac Asimov,Angels & Demons,3.5,94
+179,Ernest Hemingway,Mrs. Dalloway,4,43
+180,Malcolm Gladwell,Mrs. Dalloway,4.6,34
+181,J.K. Rowling,The Old Man and the Sea,4.3,45
+182,Khaled Hosseini,The Sorcerer's Stone,5,88
+183,Agatha Christie,Fahrenheit 451,4.9,90
+184,Khaled Hosseini,The Kite Runner,3.4,45
+185,Khaled Hosseini,Mrs. Dalloway,4.4,26
+186,Virginia Woolf,Murder on the Orient Express,4.9,11
+187,Malcolm Gladwell,The Firm,3.5,87
+188,Virginia Woolf,Pride and Prejudice,5,41
+189,Jane Austen,Outliers,4.8,87
+190,Dan Brown,Fahrenheit 451,3.8,84
+191,Isaac Asimov,The Firm,4.9,69
+192,Charles Dickens,Mrs. Dalloway,4,25
+193,Dan Brown,The Adventures of Tom Sawyer,3,78
+194,Virginia Woolf,To Kill a Mockingbird,3.6,20
+195,Virginia Woolf,Angels & Demons,3.2,86
+196,Margaret Atwood,The Great Gatsby,3.2,39
+197,J.K. Rowling,The Hobbit,3.8,68
+198,C.S. Lewis,Mrs. Dalloway,3.9,36
+199,Ernest Hemingway,Foundation,4.4,49
+200,Isaac Asimov,Murder on the Orient Express,3.6,37
+201,Ernest Hemingway,Fahrenheit 451,4.5,15
+202,Agatha Christie,Outliers,4.5,84
+203,Margaret Atwood,Oliver Twist,4.6,100
+204,Margaret Atwood,Angels & Demons,3,2
+205,Khaled Hosseini,The Shining,3.3,69
+206,Khaled Hosseini,Pride and Prejudice,3.9,74
+207,Virginia Woolf,Murder on the Orient Express,4,93
+208,Agatha Christie,Foundation,3.6,91
+209,Agatha Christie,Mrs. Dalloway,4.6,60
+210,Margaret Atwood,The Shining,3.8,24
+211,Mark Twain,The Shining,3.4,13
+212,Ernest Hemingway,The Handmaid's Tale,4.7,19
+213,Dan Brown,The Firm,3.9,25
+214,F. Scott Fitzgerald,Mrs. Dalloway,3.1,30
+215,George R.R. Martin,Angels & Demons,4.9,54
+216,J.K. Rowling,Pride and Prejudice,3.4,40
+217,Khaled Hosseini,The Firm,4.5,16
+218,Harper Lee,The Great Gatsby,3.9,2
+219,F. Scott Fitzgerald,The Hobbit,3.4,56
+220,George R.R. Martin,The Hobbit,3.2,34
+221,Malcolm Gladwell,The Firm,3.1,10
+222,F. Scott Fitzgerald,The Firm,4.7,72
+223,Khaled Hosseini,The Shining,4.4,3
+224,Ray Bradbury,The Hobbit,4.3,70
+225,George R.R. Martin,Foundation,4.6,26
+226,George R.R. Martin,Oliver Twist,4.4,95
+227,Harper Lee,Mrs. Dalloway,3.1,13
+228,F. Scott Fitzgerald,The Hobbit,3.1,47
+229,Agatha Christie,The Handmaid's Tale,3,29
+230,Malcolm Gladwell,Foundation,4.1,38
+231,Ernest Hemingway,The Adventures of Tom Sawyer,3.5,48
+232,J.K. Rowling,The Great Gatsby,3.5,65
+233,Margaret Atwood,Pride and Prejudice,4.7,80
+234,J.K. Rowling,The Great Gatsby,3.8,42
+235,Isaac Asimov,Outliers,3.1,39
+236,Dan Brown,Fahrenheit 451,4.5,14
+237,C.S. Lewis,The Old Man and the Sea,4.4,85
+238,Ernest Hemingway,The Chronicles of Narnia,4.6,52
+239,Harper Lee,Murder on the Orient Express,4.3,21
+240,Khaled Hosseini,Outliers,3,100
+241,Charles Dickens,Fahrenheit 451,3.4,71
+242,Jane Austen,The Old Man and the Sea,3.9,30
+243,Dan Brown,Angels & Demons,3.6,14
+244,F. Scott Fitzgerald,The Hobbit,5,52
+245,George R.R. Martin,Oliver Twist,4.8,100
+246,Khaled Hosseini,The Adventures of Tom Sawyer,4.6,67
+247,Harper Lee,A Game of Thrones,3.6,54
+248,Jane Austen,The Great Gatsby,4.7,19
+249,George R.R. Martin,The Sorcerer's Stone,4.3,43
+250,F. Scott Fitzgerald,A Game of Thrones,4.4,3
+251,Malcolm Gladwell,Foundation,4.5,2
+252,Jane Austen,The Firm,3.8,42
+253,Ray Bradbury,The Adventures of Tom Sawyer,3.8,15
+254,Khaled Hosseini,Mrs. Dalloway,4.8,68
+255,Dan Brown,The Shining,3.3,3
+256,John Grisham,The Sorcerer's Stone,3.6,89
+257,Dan Brown,Murder on the Orient Express,3.6,98
+258,Charles Dickens,The Old Man and the Sea,4.6,36
+259,Khaled Hosseini,The Kite Runner,3.9,1
+260,Ray Bradbury,To Kill a Mockingbird,3.2,27
+261,J.R.R. Tolkien,Outliers,3.4,63
+262,Harper Lee,The Kite Runner,3.8,57
+263,C.S. Lewis,Murder on the Orient Express,3.5,44
+264,George R.R. Martin,To Kill a Mockingbird,3.3,65
+265,Virginia Woolf,Pride and Prejudice,3.8,57
+266,Ray Bradbury,The Handmaid's Tale,3.9,29
+267,Mark Twain,The Old Man and the Sea,3.9,93
+268,Harper Lee,Mrs. Dalloway,4.4,57
+269,J.K. Rowling,The Great Gatsby,3,97
+270,J.R.R. Tolkien,The Kite Runner,4.4,2
+271,Mark Twain,Foundation,4.6,81
+272,Agatha Christie,The Kite Runner,3.3,96
+273,Harper Lee,The Chronicles of Narnia,4.2,90
+274,C.S. Lewis,The Shining,4.5,34
+275,Agatha Christie,Murder on the Orient Express,4,2
+276,Ernest Hemingway,The Sorcerer's Stone,3.8,49
+277,Malcolm Gladwell,Oliver Twist,3.7,58
+278,Dan Brown,Pride and Prejudice,3.5,65
+279,J.K. Rowling,Murder on the Orient Express,3.5,92
+280,J.K. Rowling,Angels & Demons,3.4,21
+281,C.S. Lewis,Oliver Twist,3.8,98
+282,Harper Lee,To Kill a Mockingbird,3.8,59
+283,Charles Dickens,The Shining,3.1,61
+284,C.S. Lewis,Murder on the Orient Express,3.1,79
+285,Dan Brown,Foundation,4.1,45
+286,Mark Twain,Mrs. Dalloway,3.4,3
+287,Margaret Atwood,Foundation,4.5,20
+288,Jane Austen,Pride and Prejudice,4.1,34
+289,Dan Brown,Mrs. Dalloway,3.1,70
+290,Isaac Asimov,The Sorcerer's Stone,4.9,36
+291,Ray Bradbury,Fahrenheit 451,4.5,74
+292,Ernest Hemingway,The Handmaid's Tale,3.8,24
+293,Harper Lee,The Shining,3.3,70
+294,Ernest Hemingway,The Kite Runner,3.2,59
+295,Dan Brown,The Firm,3.4,58
+296,Stephen King,The Firm,3.5,6
+297,Harper Lee,Outliers,4.9,47
+298,Mark Twain,Murder on the Orient Express,3.7,17
+299,Khaled Hosseini,The Firm,3.6,20
+300,Stephen King,The Hobbit,3.6,61
+301,Charles Dickens,Murder on the Orient Express,3.6,30
+302,Ernest Hemingway,The Great Gatsby,3.4,82
+303,Ernest Hemingway,The Shining,4.3,47
+304,F. Scott Fitzgerald,The Shining,3.5,89
+305,Virginia Woolf,Murder on the Orient Express,4,70
+306,Dan Brown,Mrs. Dalloway,3.8,93
+307,J.K. Rowling,The Old Man and the Sea,4.5,70
+308,Khaled Hosseini,The Firm,4.8,5
+309,George R.R. Martin,Mrs. Dalloway,4.2,100
+310,Charles Dickens,The Adventures of Tom Sawyer,3.8,32
+311,Agatha Christie,The Hobbit,4.9,48
+312,Harper Lee,The Chronicles of Narnia,3.7,93
+313,Margaret Atwood,The Kite Runner,4.1,92
+314,Harper Lee,The Sorcerer's Stone,4.7,75
+315,Khaled Hosseini,The Handmaid's Tale,4.8,60
+316,Jane Austen,Fahrenheit 451,4.9,36
+317,Charles Dickens,The Sorcerer's Stone,3.6,98
+318,Charles Dickens,A Game of Thrones,4.4,58
+319,Isaac Asimov,To Kill a Mockingbird,3.1,49
+320,Ernest Hemingway,The Firm,3.2,35
+321,Jane Austen,The Handmaid's Tale,4,38
+322,Stephen King,Outliers,3.2,33
+323,Jane Austen,Mrs. Dalloway,3.1,51
+324,Agatha Christie,The Chronicles of Narnia,5,76
+325,Virginia Woolf,Foundation,4,42
+326,Malcolm Gladwell,Outliers,4.7,50
+327,George R.R. Martin,The Old Man and the Sea,3.8,96
+328,Harper Lee,Foundation,3.4,46
+329,Malcolm Gladwell,The Sorcerer's Stone,4.6,7
+330,J.R.R. Tolkien,A Game of Thrones,4.7,35
+331,Agatha Christie,The Shining,3.1,46
+332,Khaled Hosseini,Foundation,3.9,65
+333,C.S. Lewis,Foundation,4.4,73
+334,Margaret Atwood,The Hobbit,3.7,66
+335,Harper Lee,The Adventures of Tom Sawyer,3.9,89
+336,Harper Lee,The Adventures of Tom Sawyer,3.7,32
+337,Dan Brown,The Old Man and the Sea,4.6,34
+338,C.S. Lewis,The Sorcerer's Stone,4.1,27
+339,Isaac Asimov,Angels & Demons,3.1,97
+340,Jane Austen,Angels & Demons,4.7,65
+341,J.R.R. Tolkien,The Old Man and the Sea,3,41
+342,Jane Austen,The Chronicles of Narnia,4.5,5
+343,George R.R. Martin,Outliers,4.1,97
+344,Ernest Hemingway,Oliver Twist,4.7,9
+345,F. Scott Fitzgerald,Angels & Demons,3.1,80
+346,Harper Lee,The Firm,4.8,49
+347,Agatha Christie,The Kite Runner,3.4,20
+348,Malcolm Gladwell,Murder on the Orient Express,4.2,71
+349,Agatha Christie,Oliver Twist,3.4,17
+350,Margaret Atwood,The Hobbit,4.1,36
+351,Stephen King,Pride and Prejudice,3.2,29
+352,Ernest Hemingway,Pride and Prejudice,3.1,13
+353,Margaret Atwood,Pride and Prejudice,3.4,46
+354,Khaled Hosseini,The Shining,3.8,8
+355,Margaret Atwood,The Chronicles of Narnia,4.8,11
+356,F. Scott Fitzgerald,The Chronicles of Narnia,4,20
+357,Isaac Asimov,To Kill a Mockingbird,4.3,32
+358,F. Scott Fitzgerald,The Shining,4.2,12
+359,Margaret Atwood,The Firm,4.1,36
+360,Agatha Christie,The Shining,3.2,77
+361,Agatha Christie,Outliers,4.4,88
+362,George R.R. Martin,The Adventures of Tom Sawyer,4.5,49
+363,Jane Austen,To Kill a Mockingbird,4.4,55
+364,John Grisham,Pride and Prejudice,4.8,45
+365,J.R.R. Tolkien,Outliers,3.1,64
+366,Malcolm Gladwell,To Kill a Mockingbird,3.2,69
+367,Isaac Asimov,Mrs. Dalloway,3.9,14
+368,Malcolm Gladwell,Pride and Prejudice,4.9,44
+369,Stephen King,The Great Gatsby,3.8,80
+370,Khaled Hosseini,The Chronicles of Narnia,4.5,31
+371,Ernest Hemingway,Outliers,4.4,72
+372,Mark Twain,To Kill a Mockingbird,3.8,32
+373,J.K. Rowling,The Old Man and the Sea,4.9,70
+374,Ernest Hemingway,The Hobbit,3.5,57
+375,Isaac Asimov,The Handmaid's Tale,3.2,39
+376,F. Scott Fitzgerald,The Kite Runner,3.1,32
+377,Khaled Hosseini,Oliver Twist,4.5,23
+378,George R.R. Martin,Oliver Twist,4.1,45
+379,F. Scott Fitzgerald,The Firm,4.1,65
+380,Harper Lee,The Sorcerer's Stone,4.3,56
+381,Stephen King,Mrs. Dalloway,4.5,84
+382,Khaled Hosseini,The Firm,4.8,96
+383,Virginia Woolf,Outliers,4,58
+384,Stephen King,The Sorcerer's Stone,4.2,12
+385,F. Scott Fitzgerald,The Old Man and the Sea,4.4,28
+386,J.R.R. Tolkien,The Hobbit,4.6,42
+387,Charles Dickens,The Sorcerer's Stone,3.5,23
+388,Charles Dickens,The Shining,4.4,78
+389,J.R.R. Tolkien,The Old Man and the Sea,4.3,22
+390,F. Scott Fitzgerald,The Shining,4,72
+391,Harper Lee,Fahrenheit 451,4.4,63
+392,Ray Bradbury,A Game of Thrones,4.6,74
+393,Malcolm Gladwell,The Kite Runner,3.2,76
+394,Stephen King,Mrs. Dalloway,4.8,17
+395,C.S. Lewis,Murder on the Orient Express,4.1,53
+396,Mark Twain,The Hobbit,3.7,24
+397,Ray Bradbury,The Kite Runner,4.9,68
+398,Dan Brown,The Adventures of Tom Sawyer,5,86
+399,John Grisham,Murder on the Orient Express,4,19
+400,Virginia Woolf,A Game of Thrones,3.1,20
+401,Dan Brown,Fahrenheit 451,4.9,73
+402,John Grisham,The Hobbit,3.3,9
+403,J.K. Rowling,The Hobbit,3.6,53
+404,Mark Twain,The Sorcerer's Stone,3.5,55
+405,J.R.R. Tolkien,The Adventures of Tom Sawyer,4.4,33
+406,Virginia Woolf,Pride and Prejudice,4.2,69
+407,Harper Lee,Oliver Twist,4.2,53
+408,Ernest Hemingway,Pride and Prejudice,3.5,9
+409,Ernest Hemingway,The Sorcerer's Stone,4.9,30
+410,Margaret Atwood,The Old Man and the Sea,5,19
+411,Dan Brown,The Adventures of Tom Sawyer,4.9,65
+412,Agatha Christie,The Old Man and the Sea,3.9,96
+413,Dan Brown,Mrs. Dalloway,3,5
+414,Virginia Woolf,Mrs. Dalloway,3.7,6
+415,Charles Dickens,Outliers,4.5,24
+416,Margaret Atwood,A Game of Thrones,3.7,66
+417,Virginia Woolf,The Adventures of Tom Sawyer,4.1,85
+418,Mark Twain,The Kite Runner,3,78
+419,George R.R. Martin,Murder on the Orient Express,4.3,38
+420,C.S. Lewis,The Firm,4.4,100
+421,J.K. Rowling,Outliers,4.6,29
+422,John Grisham,Outliers,4.5,31
+423,Malcolm Gladwell,The Hobbit,4.2,51
+424,Malcolm Gladwell,The Hobbit,4.4,70
+425,Khaled Hosseini,Foundation,4.6,22
+426,J.R.R. Tolkien,Outliers,4.3,94
+427,J.K. Rowling,The Great Gatsby,3.7,4
+428,Malcolm Gladwell,The Chronicles of Narnia,3.7,24
+429,C.S. Lewis,Pride and Prejudice,4,63
+430,Charles Dickens,Foundation,3.6,18
+431,Malcolm Gladwell,The Old Man and the Sea,3.5,24
+432,Jane Austen,The Chronicles of Narnia,3.5,70
+433,J.R.R. Tolkien,Angels & Demons,4.9,75
+434,John Grisham,The Hobbit,3.6,59
+435,Stephen King,Pride and Prejudice,3.4,39
+436,Malcolm Gladwell,The Shining,4.3,18
+437,Agatha Christie,Oliver Twist,3.7,51
+438,Khaled Hosseini,A Game of Thrones,3.4,68
+439,J.K. Rowling,A Game of Thrones,4.5,17
+440,Dan Brown,Fahrenheit 451,3.3,52
+441,Margaret Atwood,The Hobbit,3.2,60
+442,Dan Brown,Foundation,4.5,35
+443,J.K. Rowling,The Shining,4.4,6
+444,Khaled Hosseini,Pride and Prejudice,4.3,70
+445,C.S. Lewis,Angels & Demons,3.4,22
+446,Harper Lee,The Sorcerer's Stone,3.3,95
+447,Mark Twain,The Great Gatsby,3.7,29
+448,F. Scott Fitzgerald,Mrs. Dalloway,4.9,49
+449,Khaled Hosseini,The Hobbit,3.6,37
+450,F. Scott Fitzgerald,Pride and Prejudice,4.6,47
+451,Stephen King,The Firm,4,3
+452,Virginia Woolf,The Sorcerer's Stone,4.2,49
+453,Mark Twain,The Hobbit,3.6,67
+454,F. Scott Fitzgerald,The Chronicles of Narnia,4.2,94
+455,Ernest Hemingway,Foundation,4.2,20
+456,Mark Twain,Angels & Demons,4.8,66
+457,Harper Lee,To Kill a Mockingbird,3.3,47
+458,Dan Brown,Foundation,4.3,95
+459,Khaled Hosseini,Mrs. Dalloway,4.6,17
+460,J.R.R. Tolkien,The Handmaid's Tale,3.9,37
+461,George R.R. Martin,The Hobbit,4.1,53
+462,Mark Twain,The Adventures of Tom Sawyer,3.1,10
+463,Virginia Woolf,The Adventures of Tom Sawyer,3.8,57
+464,Charles Dickens,The Chronicles of Narnia,4.4,78
+465,J.K. Rowling,The Chronicles of Narnia,4.1,75
+466,Khaled Hosseini,Oliver Twist,4.9,83
+467,Dan Brown,The Adventures of Tom Sawyer,3.3,99
+468,Jane Austen,Murder on the Orient Express,4.4,40
+469,Stephen King,The Old Man and the Sea,3.5,53
+470,Ernest Hemingway,The Handmaid's Tale,4.1,97
+471,J.R.R. Tolkien,Foundation,4.2,89
+472,Virginia Woolf,Outliers,4.8,70
+473,J.K. Rowling,Outliers,4.7,71
+474,F. Scott Fitzgerald,The Handmaid's Tale,3.1,61
+475,Jane Austen,The Kite Runner,3.8,72
+476,F. Scott Fitzgerald,The Shining,4.7,54
+477,Khaled Hosseini,The Firm,3.9,77
+478,Charles Dickens,Oliver Twist,4.8,52
+479,Isaac Asimov,A Game of Thrones,4.5,37
+480,Agatha Christie,Pride and Prejudice,4,90
+481,Mark Twain,Pride and Prejudice,4.2,36
+482,Dan Brown,The Firm,4.6,18
+483,Ray Bradbury,A Game of Thrones,4.1,38
+484,Ray Bradbury,Murder on the Orient Express,3.3,31
+485,Jane Austen,Pride and Prejudice,4.1,97
+486,J.R.R. Tolkien,The Sorcerer's Stone,3.1,53
+487,Jane Austen,Fahrenheit 451,3.3,75
+488,Malcolm Gladwell,The Hobbit,3.1,71
+489,Mark Twain,Mrs. Dalloway,4.6,36
+490,Khaled Hosseini,The Chronicles of Narnia,3,48
+491,J.R.R. Tolkien,Foundation,4.1,42
+492,Margaret Atwood,The Adventures of Tom Sawyer,4.5,17
+493,C.S. Lewis,The Sorcerer's Stone,3.8,7
+494,Malcolm Gladwell,The Hobbit,3.9,41
+495,C.S. Lewis,The Adventures of Tom Sawyer,4.3,81
+496,Virginia Woolf,The Old Man and the Sea,3.2,12
+497,Virginia Woolf,The Old Man and the Sea,3.5,84
+498,Malcolm Gladwell,The Kite Runner,3.5,92
+499,Harper Lee,Oliver Twist,4.2,45
+500,Jane Austen,Outliers,4.1,5
+501,George R.R. Martin,The Kite Runner,4.9,41
+502,Isaac Asimov,The Great Gatsby,3.7,79
+503,George R.R. Martin,Foundation,4.6,36
+504,Agatha Christie,Pride and Prejudice,3.8,47
+505,Mark Twain,Fahrenheit 451,4.4,33
+506,J.K. Rowling,To Kill a Mockingbird,4.9,58
+507,Dan Brown,A Game of Thrones,3.5,42
+508,Agatha Christie,To Kill a Mockingbird,4.4,85
+509,J.K. Rowling,Oliver Twist,4.9,81
+510,Agatha Christie,To Kill a Mockingbird,3.9,90
+511,Virginia Woolf,The Shining,4.2,11
+512,Stephen King,The Old Man and the Sea,3.2,9
+513,George R.R. Martin,Oliver Twist,3.4,14
+514,Ray Bradbury,Murder on the Orient Express,3.7,69
+515,J.K. Rowling,Angels & Demons,3.2,45
+516,Jane Austen,Mrs. Dalloway,3.3,51
+517,Ray Bradbury,The Great Gatsby,3.7,90
+518,Ernest Hemingway,The Handmaid's Tale,3.4,32
+519,C.S. Lewis,The Old Man and the Sea,3.4,87
+520,Jane Austen,Pride and Prejudice,3.2,78
+521,Isaac Asimov,The Shining,3.1,40
+522,Mark Twain,Oliver Twist,4,94
+523,Jane Austen,The Chronicles of Narnia,4.6,28
+524,Margaret Atwood,Oliver Twist,3.2,4
+525,Virginia Woolf,The Shining,4.1,89
+526,F. Scott Fitzgerald,A Game of Thrones,3.1,21
+527,Virginia Woolf,Murder on the Orient Express,4.2,61
+528,Harper Lee,Angels & Demons,3.4,14
+529,Virginia Woolf,The Chronicles of Narnia,4,42
+530,J.R.R. Tolkien,The Old Man and the Sea,3.5,56
+531,Ernest Hemingway,The Chronicles of Narnia,3.7,28
+532,Agatha Christie,The Hobbit,4.8,23
+533,Harper Lee,Oliver Twist,3.5,44
+534,Harper Lee,Outliers,3.5,84
+535,Isaac Asimov,Angels & Demons,4.1,71
+536,Margaret Atwood,The Kite Runner,4.6,93
+537,Agatha Christie,To Kill a Mockingbird,3.2,49
+538,F. Scott Fitzgerald,A Game of Thrones,4.8,27
+539,Ernest Hemingway,Fahrenheit 451,4.4,59
+540,Stephen King,The Kite Runner,4.4,10
+541,J.R.R. Tolkien,The Firm,4.5,43
+542,C.S. Lewis,The Kite Runner,3.9,19
+543,J.K. Rowling,A Game of Thrones,3.3,42
+544,Mark Twain,Fahrenheit 451,4,65
+545,Margaret Atwood,The Old Man and the Sea,4.6,24
+546,J.K. Rowling,To Kill a Mockingbird,3.4,41
+547,J.R.R. Tolkien,The Sorcerer's Stone,3.8,21
+548,Dan Brown,A Game of Thrones,4.2,25
+549,Ray Bradbury,The Hobbit,3.4,41
+550,Jane Austen,To Kill a Mockingbird,4,98
+551,Stephen King,The Kite Runner,4.3,39
+552,Ernest Hemingway,Mrs. Dalloway,3.5,79
+553,Margaret Atwood,Foundation,4.6,45
+554,John Grisham,Fahrenheit 451,4.1,61
+555,J.R.R. Tolkien,The Firm,3.3,60
+556,Margaret Atwood,The Adventures of Tom Sawyer,4.9,10
+557,Margaret Atwood,Oliver Twist,4.3,66
+558,J.K. Rowling,To Kill a Mockingbird,3.9,45
+559,F. Scott Fitzgerald,Outliers,3.3,45
+560,J.R.R. Tolkien,A Game of Thrones,3.1,6
+561,John Grisham,Mrs. Dalloway,4.1,23
+562,Ray Bradbury,The Shining,4.8,36
+563,Margaret Atwood,A Game of Thrones,3.2,19
+564,John Grisham,Mrs. Dalloway,4.6,42
+565,Agatha Christie,Outliers,3,1
+566,Khaled Hosseini,The Firm,4.7,96
+567,Isaac Asimov,The Old Man and the Sea,3.2,82
+568,Ray Bradbury,A Game of Thrones,3.4,93
+569,Agatha Christie,Fahrenheit 451,3.7,96
+570,John Grisham,The Chronicles of Narnia,3.8,50
+571,Ernest Hemingway,The Handmaid's Tale,3.2,96
+572,Ray Bradbury,Murder on the Orient Express,5,60
+573,John Grisham,The Kite Runner,4.4,74
+574,Agatha Christie,The Shining,4.1,89
+575,Harper Lee,Oliver Twist,3.7,1
+576,Ernest Hemingway,The Great Gatsby,3.7,87
+577,Ernest Hemingway,Murder on the Orient Express,3.2,33
+578,Harper Lee,Foundation,3.6,8
+579,J.R.R. Tolkien,Pride and Prejudice,4.3,8
+580,C.S. Lewis,Mrs. Dalloway,4.1,18
+581,Mark Twain,Oliver Twist,4.6,45
+582,Isaac Asimov,The Chronicles of Narnia,4.5,8
+583,Malcolm Gladwell,The Shining,3.2,2
+584,Jane Austen,The Firm,4.1,45
+585,Margaret Atwood,The Firm,4.1,71
+586,Stephen King,The Adventures of Tom Sawyer,3.8,23
+587,Margaret Atwood,The Shining,3.5,86
+588,Jane Austen,Murder on the Orient Express,3.5,10
+589,George R.R. Martin,Pride and Prejudice,3.9,30
+590,Harper Lee,Fahrenheit 451,3.2,38
+591,Malcolm Gladwell,The Chronicles of Narnia,3.3,58
+592,Ernest Hemingway,The Old Man and the Sea,3.9,31
+593,Charles Dickens,The Shining,4.2,49
+594,Khaled Hosseini,Angels & Demons,4.2,67
+595,Mark Twain,The Old Man and the Sea,3.3,89
+596,J.R.R. Tolkien,The Chronicles of Narnia,3.2,83
+597,F. Scott Fitzgerald,The Great Gatsby,3.3,24
+598,Agatha Christie,Mrs. Dalloway,4.7,55
+599,Dan Brown,Fahrenheit 451,4,65
+600,Ernest Hemingway,The Chronicles of Narnia,4.9,97
+601,Mark Twain,Fahrenheit 451,4.2,30
+602,Isaac Asimov,Fahrenheit 451,3.4,90
+603,Isaac Asimov,The Great Gatsby,4,47
+604,Charles Dickens,The Chronicles of Narnia,3.3,51
+605,Stephen King,To Kill a Mockingbird,3,18
+606,Ray Bradbury,The Old Man and the Sea,4,88
+607,Harper Lee,A Game of Thrones,4.8,24
+608,Margaret Atwood,The Sorcerer's Stone,4.9,65
+609,Ray Bradbury,The Great Gatsby,3.3,87
+610,John Grisham,Angels & Demons,3.2,94
+611,Ray Bradbury,The Kite Runner,4.3,22
+612,Jane Austen,The Firm,4.1,24
+613,Virginia Woolf,The Old Man and the Sea,4.2,33
+614,Stephen King,The Sorcerer's Stone,3.4,33
+615,F. Scott Fitzgerald,A Game of Thrones,3.4,46
+616,Dan Brown,To Kill a Mockingbird,3.8,74
+617,Ray Bradbury,The Hobbit,4.4,53
+618,Jane Austen,The Chronicles of Narnia,4.7,11
+619,J.K. Rowling,Murder on the Orient Express,3.3,88
+620,C.S. Lewis,Angels & Demons,4.7,74
+621,J.R.R. Tolkien,To Kill a Mockingbird,3.4,59
+622,J.K. Rowling,The Great Gatsby,4.5,49
+623,Charles Dickens,The Sorcerer's Stone,4.3,76
+624,Margaret Atwood,Murder on the Orient Express,3.6,62
+625,Dan Brown,The Handmaid's Tale,3.2,35
+626,Ernest Hemingway,The Firm,4.6,64
+627,Malcolm Gladwell,Mrs. Dalloway,3,3
+628,Jane Austen,Mrs. Dalloway,3.9,36
+629,Margaret Atwood,Pride and Prejudice,4.6,81
+630,Khaled Hosseini,Outliers,4.4,21
+631,George R.R. Martin,The Firm,3.9,99
+632,John Grisham,Oliver Twist,3.5,14
+633,John Grisham,The Great Gatsby,3.5,23
+634,Malcolm Gladwell,Angels & Demons,4.6,3
+635,Charles Dickens,The Handmaid's Tale,4.8,75
+636,J.R.R. Tolkien,Mrs. Dalloway,3.1,10
+637,Jane Austen,The Handmaid's Tale,4.8,45
+638,Virginia Woolf,The Old Man and the Sea,3.3,3
+639,Ernest Hemingway,The Great Gatsby,3.4,32
+640,Agatha Christie,Outliers,3.1,69
+641,Khaled Hosseini,The Kite Runner,3.3,63
+642,Malcolm Gladwell,The Shining,4.2,32
+643,George R.R. Martin,The Firm,4.5,55
+644,Khaled Hosseini,Fahrenheit 451,4.9,96
+645,C.S. Lewis,The Handmaid's Tale,4.3,46
+646,Stephen King,The Adventures of Tom Sawyer,3.5,78
+647,Mark Twain,Foundation,4,92
+648,Ernest Hemingway,Oliver Twist,3,38
+649,Charles Dickens,Fahrenheit 451,3.7,51
+650,J.K. Rowling,The Sorcerer's Stone,3.4,86
+651,Jane Austen,Outliers,3.6,48
+652,Dan Brown,Mrs. Dalloway,4.2,3
+653,Dan Brown,Angels & Demons,4,86
+654,Harper Lee,The Old Man and the Sea,3.6,54
+655,F. Scott Fitzgerald,Angels & Demons,3.8,48
+656,Virginia Woolf,The Handmaid's Tale,4.1,98
+657,Ernest Hemingway,To Kill a Mockingbird,3.1,61
+658,Agatha Christie,Murder on the Orient Express,3.1,7
+659,Charles Dickens,The Kite Runner,4.9,76
+660,Charles Dickens,Angels & Demons,3.2,14
+661,Isaac Asimov,The Handmaid's Tale,3.3,66
+662,Malcolm Gladwell,The Old Man and the Sea,4.4,92
+663,Margaret Atwood,Oliver Twist,3.7,18
+664,George R.R. Martin,The Handmaid's Tale,3.7,8
+665,Dan Brown,The Old Man and the Sea,4.5,22
+666,C.S. Lewis,The Kite Runner,3,82
+667,Ray Bradbury,Pride and Prejudice,3.7,6
+668,J.K. Rowling,Oliver Twist,4.3,88
+669,C.S. Lewis,Pride and Prejudice,3.8,45
+670,Dan Brown,To Kill a Mockingbird,3.9,17
+671,Agatha Christie,The Great Gatsby,4.3,99
+672,F. Scott Fitzgerald,Murder on the Orient Express,3.7,19
+673,Stephen King,Mrs. Dalloway,4.9,51
+674,George R.R. Martin,The Kite Runner,3.5,43
+675,C.S. Lewis,Fahrenheit 451,4.9,98
+676,John Grisham,The Shining,3.8,73
+677,Jane Austen,The Shining,4.3,23
+678,Harper Lee,The Adventures of Tom Sawyer,3.1,76
+679,Ernest Hemingway,The Firm,4.3,70
+680,Stephen King,The Hobbit,3.1,31
+681,Isaac Asimov,To Kill a Mockingbird,3.6,39
+682,Ray Bradbury,The Firm,3.6,95
+683,J.R.R. Tolkien,The Old Man and the Sea,3.6,4
+684,J.R.R. Tolkien,A Game of Thrones,3,20
+685,Malcolm Gladwell,A Game of Thrones,3.9,35
+686,Agatha Christie,The Great Gatsby,3.4,81
+687,Malcolm Gladwell,Angels & Demons,4.5,88
+688,Charles Dickens,The Sorcerer's Stone,3.5,90
+689,Harper Lee,Mrs. Dalloway,3.3,99
+690,George R.R. Martin,A Game of Thrones,3.3,84
+691,Ernest Hemingway,Angels & Demons,3.2,62
+692,George R.R. Martin,The Kite Runner,3.5,5
+693,Agatha Christie,Oliver Twist,3.4,88
+694,J.K. Rowling,Fahrenheit 451,4.4,64
+695,Agatha Christie,The Great Gatsby,4.4,40
+696,C.S. Lewis,Murder on the Orient Express,3.4,97
+697,Harper Lee,The Great Gatsby,3,19
+698,Jane Austen,The Great Gatsby,4.1,34
+699,Dan Brown,The Shining,4.1,46
+700,Khaled Hosseini,Fahrenheit 451,3.7,73
+701,Isaac Asimov,A Game of Thrones,4.7,62
+702,Khaled Hosseini,Murder on the Orient Express,4.4,44
+703,Agatha Christie,Outliers,4.5,17
+704,Ernest Hemingway,Mrs. Dalloway,3.8,26
+705,Ray Bradbury,Murder on the Orient Express,3.3,90
+706,J.R.R. Tolkien,Angels & Demons,3.3,38
+707,J.K. Rowling,The Shining,4.4,73
+708,Khaled Hosseini,The Shining,4.3,86
+709,F. Scott Fitzgerald,The Shining,4.2,3
+710,Virginia Woolf,The Sorcerer's Stone,3.7,89
+711,Stephen King,The Sorcerer's Stone,3.4,87
+712,F. Scott Fitzgerald,Foundation,3.3,73
+713,George R.R. Martin,Fahrenheit 451,3.4,38
+714,Khaled Hosseini,The Handmaid's Tale,3.5,24
+715,Isaac Asimov,The Handmaid's Tale,4.4,94
+716,C.S. Lewis,The Chronicles of Narnia,3.9,9
+717,Charles Dickens,The Old Man and the Sea,4.9,86
+718,Ernest Hemingway,To Kill a Mockingbird,5,14
+719,C.S. Lewis,A Game of Thrones,4.4,12
+720,F. Scott Fitzgerald,The Sorcerer's Stone,4.3,51
+721,F. Scott Fitzgerald,The Adventures of Tom Sawyer,3.2,85
+722,Charles Dickens,The Handmaid's Tale,3.9,66
+723,Margaret Atwood,Pride and Prejudice,3.3,30
+724,Khaled Hosseini,Fahrenheit 451,4.4,45
+725,Virginia Woolf,Pride and Prejudice,4.5,1
+726,Stephen King,Angels & Demons,3,32
+727,Mark Twain,Foundation,4.5,78
+728,Isaac Asimov,The Kite Runner,3.3,4
+729,Agatha Christie,Foundation,4.8,38
+730,Khaled Hosseini,Murder on the Orient Express,3.7,67
+731,George R.R. Martin,Oliver Twist,4.5,26
+732,Ray Bradbury,Pride and Prejudice,3,15
+733,George R.R. Martin,The Chronicles of Narnia,3.6,46
+734,Mark Twain,Oliver Twist,4.1,47
+735,John Grisham,The Kite Runner,3.4,50
+736,Malcolm Gladwell,The Hobbit,3.4,94
+737,Khaled Hosseini,The Firm,3.5,21
+738,Margaret Atwood,The Hobbit,4.7,5
+739,Dan Brown,The Adventures of Tom Sawyer,4.1,91
+740,Virginia Woolf,The Chronicles of Narnia,3.2,72
+741,Ernest Hemingway,The Old Man and the Sea,5,71
+742,Charles Dickens,The Firm,3.3,19
+743,Charles Dickens,Outliers,4.6,22
+744,Ray Bradbury,Pride and Prejudice,3.3,42
+745,Charles Dickens,The Firm,3,6
+746,Ernest Hemingway,Mrs. Dalloway,4.3,51
+747,J.R.R. Tolkien,The Handmaid's Tale,3.2,58
+748,Mark Twain,The Sorcerer's Stone,4.1,40
+749,Margaret Atwood,The Hobbit,3.3,52
+750,J.K. Rowling,The Old Man and the Sea,4.2,98
+751,Dan Brown,The Handmaid's Tale,3.5,52
+752,Agatha Christie,The Sorcerer's Stone,4.2,97
+753,F. Scott Fitzgerald,Oliver Twist,4.2,71
+754,F. Scott Fitzgerald,The Sorcerer's Stone,4.1,7
+755,Virginia Woolf,Outliers,4.1,19
+756,Mark Twain,Oliver Twist,5,85
+757,J.K. Rowling,Foundation,3.5,95
+758,Dan Brown,To Kill a Mockingbird,3.1,14
+759,Khaled Hosseini,Oliver Twist,4,35
+760,George R.R. Martin,The Great Gatsby,4.4,81
+761,F. Scott Fitzgerald,Fahrenheit 451,3.9,87
+762,C.S. Lewis,Fahrenheit 451,3,48
+763,Ray Bradbury,The Sorcerer's Stone,3.3,59
+764,Agatha Christie,The Chronicles of Narnia,4,75
+765,Agatha Christie,The Old Man and the Sea,4.5,60
+766,Stephen King,The Firm,3.5,35
+767,Malcolm Gladwell,Murder on the Orient Express,4.2,1
+768,Agatha Christie,The Handmaid's Tale,4.4,100
+769,Harper Lee,Oliver Twist,3.3,28
+770,Agatha Christie,The Old Man and the Sea,3.1,97
+771,Dan Brown,Foundation,4,87
+772,F. Scott Fitzgerald,Oliver Twist,3,93
+773,Malcolm Gladwell,A Game of Thrones,3.3,90
+774,Isaac Asimov,The Old Man and the Sea,3.2,55
+775,Malcolm Gladwell,The Sorcerer's Stone,3.9,57
+776,Margaret Atwood,Fahrenheit 451,3.2,22
+777,Khaled Hosseini,The Old Man and the Sea,3.3,70
+778,Khaled Hosseini,The Chronicles of Narnia,3.2,97
+779,Ray Bradbury,The Old Man and the Sea,4.3,92
+780,J.R.R. Tolkien,Angels & Demons,4.3,76
+781,C.S. Lewis,The Kite Runner,3.3,17
+782,Jane Austen,Outliers,4.3,52
+783,F. Scott Fitzgerald,The Adventures of Tom Sawyer,3.2,84
+784,Isaac Asimov,The Handmaid's Tale,3.2,46
+785,George R.R. Martin,The Adventures of Tom Sawyer,4.5,80
+786,Khaled Hosseini,Mrs. Dalloway,4.2,96
+787,Isaac Asimov,Murder on the Orient Express,4.4,88
+788,Isaac Asimov,Pride and Prejudice,3.4,63
+789,J.K. Rowling,Fahrenheit 451,4.8,46
+790,Dan Brown,The Handmaid's Tale,3.1,18
+791,Jane Austen,The Hobbit,3.6,7
+792,Khaled Hosseini,Fahrenheit 451,3.2,46
+793,J.R.R. Tolkien,The Shining,3.4,45
+794,Ernest Hemingway,A Game of Thrones,4.5,69
+795,Agatha Christie,The Sorcerer's Stone,5,87
+796,J.K. Rowling,Murder on the Orient Express,3.4,50
+797,George R.R. Martin,The Great Gatsby,4.2,21
+798,Khaled Hosseini,Foundation,3.8,15
+799,Stephen King,The Chronicles of Narnia,3.8,70
+800,Mark Twain,The Firm,4.1,36
+801,George R.R. Martin,The Adventures of Tom Sawyer,4.2,47
+802,Jane Austen,Mrs. Dalloway,4.2,7
+803,John Grisham,Foundation,4.6,90
+804,Khaled Hosseini,The Kite Runner,5,99
+805,Virginia Woolf,The Great Gatsby,3,29
+806,Jane Austen,Murder on the Orient Express,3.1,77
+807,Stephen King,The Firm,3.3,23
+808,Ernest Hemingway,To Kill a Mockingbird,3.2,44
+809,Mark Twain,Oliver Twist,4.6,39
+810,Malcolm Gladwell,Outliers,3.5,16
+811,Ernest Hemingway,To Kill a Mockingbird,3.8,63
+812,Khaled Hosseini,The Great Gatsby,4.8,26
+813,J.K. Rowling,Outliers,3.9,9
+814,Agatha Christie,Fahrenheit 451,3.7,75
+815,Isaac Asimov,The Great Gatsby,4.5,45
+816,Charles Dickens,The Handmaid's Tale,3.9,19
+817,Dan Brown,A Game of Thrones,5,31
+818,Ray Bradbury,The Old Man and the Sea,3.2,1
+819,Agatha Christie,The Handmaid's Tale,4,34
+820,Margaret Atwood,The Great Gatsby,5,32
+821,George R.R. Martin,Fahrenheit 451,3.4,71
+822,Isaac Asimov,Mrs. Dalloway,4.2,16
+823,F. Scott Fitzgerald,Murder on the Orient Express,4.2,52
+824,Agatha Christie,The Sorcerer's Stone,4,69
+825,Ernest Hemingway,The Kite Runner,3.1,77
+826,C.S. Lewis,The Shining,3.7,93
+827,Harper Lee,The Shining,4,59
+828,George R.R. Martin,Foundation,3.1,31
+829,Charles Dickens,The Kite Runner,3.5,24
+830,Malcolm Gladwell,Oliver Twist,4.3,33
+831,Harper Lee,The Sorcerer's Stone,4.8,71
+832,Virginia Woolf,The Adventures of Tom Sawyer,4.2,69
+833,Khaled Hosseini,The Kite Runner,4.6,34
+834,Ray Bradbury,The Old Man and the Sea,3.7,36
+835,George R.R. Martin,The Shining,3.9,34
+836,Charles Dickens,Foundation,3,43
+837,F. Scott Fitzgerald,The Old Man and the Sea,4.3,100
+838,F. Scott Fitzgerald,To Kill a Mockingbird,4.9,8
+839,Stephen King,The Handmaid's Tale,4.7,97
+840,John Grisham,The Handmaid's Tale,4,33
+841,Ernest Hemingway,The Hobbit,3.7,30
+842,J.K. Rowling,The Shining,4.7,69
+843,J.K. Rowling,Oliver Twist,4.7,20
+844,Ray Bradbury,Angels & Demons,3.5,38
+845,Charles Dickens,A Game of Thrones,4.8,84
+846,Isaac Asimov,Outliers,3.7,79
+847,George R.R. Martin,The Hobbit,3.6,24
+848,George R.R. Martin,A Game of Thrones,3.2,24
+849,Khaled Hosseini,The Kite Runner,3.1,96
+850,John Grisham,Oliver Twist,4.6,57
+851,Margaret Atwood,Pride and Prejudice,4.4,72
+852,Stephen King,The Sorcerer's Stone,4.1,64
+853,Mark Twain,The Handmaid's Tale,3.8,25
+854,Agatha Christie,The Great Gatsby,4,27
+855,Stephen King,Foundation,4.5,93
+856,Malcolm Gladwell,The Firm,4.9,68
+857,Mark Twain,The Great Gatsby,4.5,71
+858,F. Scott Fitzgerald,Mrs. Dalloway,3.3,11
+859,Mark Twain,Outliers,3.7,19
+860,F. Scott Fitzgerald,The Kite Runner,3.5,85
+861,Isaac Asimov,The Hobbit,4.9,52
+862,Mark Twain,The Adventures of Tom Sawyer,3.5,24
+863,Dan Brown,Foundation,4.9,17
+864,Jane Austen,Mrs. Dalloway,4.8,64
+865,Malcolm Gladwell,The Great Gatsby,3.4,21
+866,Dan Brown,Angels & Demons,3.3,39
+867,Ray Bradbury,Pride and Prejudice,3.6,38
+868,Harper Lee,The Old Man and the Sea,4.8,90
+869,George R.R. Martin,The Old Man and the Sea,4.6,54
+870,Ernest Hemingway,Angels & Demons,4.1,69
+871,F. Scott Fitzgerald,The Adventures of Tom Sawyer,4.6,51
+872,Dan Brown,Mrs. Dalloway,4.6,22
+873,Dan Brown,Angels & Demons,3.1,19
+874,Stephen King,The Firm,3,91
+875,Jane Austen,Outliers,3.9,43
+876,George R.R. Martin,The Kite Runner,4.6,60
+877,Malcolm Gladwell,The Shining,4.3,49
+878,J.K. Rowling,The Hobbit,3.5,34
+879,Ray Bradbury,A Game of Thrones,4.7,46
+880,Khaled Hosseini,Outliers,3.6,21
+881,Harper Lee,Foundation,3.4,16
+882,J.K. Rowling,The Firm,3.7,47
+883,George R.R. Martin,Angels & Demons,3.7,61
+884,F. Scott Fitzgerald,Foundation,3.4,52
+885,Mark Twain,The Kite Runner,4.2,65
+886,Agatha Christie,The Great Gatsby,3.9,25
+887,Dan Brown,The Firm,4.5,15
+888,F. Scott Fitzgerald,A Game of Thrones,3.5,38
+889,Jane Austen,Outliers,3.9,96
+890,Ray Bradbury,A Game of Thrones,3.1,34
+891,Agatha Christie,Oliver Twist,3.4,84
+892,Virginia Woolf,Foundation,3.1,15
+893,Margaret Atwood,A Game of Thrones,3.2,35
+894,Harper Lee,The Firm,3.7,18
+895,Jane Austen,The Chronicles of Narnia,4.6,29
+896,Harper Lee,Pride and Prejudice,3.3,2
+897,Khaled Hosseini,The Sorcerer's Stone,3.8,48
+898,Ray Bradbury,Foundation,3.6,76
+899,Stephen King,Mrs. Dalloway,4.5,30
+900,Ernest Hemingway,Oliver Twist,4.6,60
+901,F. Scott Fitzgerald,The Chronicles of Narnia,3.3,83
+902,Harper Lee,The Chronicles of Narnia,4.2,88
+903,Dan Brown,Mrs. Dalloway,4.4,3
+904,Isaac Asimov,The Adventures of Tom Sawyer,3.3,40
+905,F. Scott Fitzgerald,Pride and Prejudice,3.1,87
+906,J.R.R. Tolkien,The Kite Runner,3.1,48
+907,F. Scott Fitzgerald,The Kite Runner,3.4,26
+908,John Grisham,Fahrenheit 451,3.2,39
+909,Malcolm Gladwell,The Sorcerer's Stone,4.5,80
+910,John Grisham,To Kill a Mockingbird,3.2,20
+911,Dan Brown,The Kite Runner,4.5,99
+912,C.S. Lewis,Fahrenheit 451,3,86
+913,Charles Dickens,Outliers,4.2,37
+914,Ernest Hemingway,The Handmaid's Tale,3.8,2
+915,Isaac Asimov,The Old Man and the Sea,3.3,91
+916,Khaled Hosseini,Angels & Demons,4.5,35
+917,Margaret Atwood,The Sorcerer's Stone,3.1,99
+918,Harper Lee,The Adventures of Tom Sawyer,4.4,89
+919,J.R.R. Tolkien,The Great Gatsby,4.6,97
+920,J.R.R. Tolkien,The Shining,4.1,39
+921,C.S. Lewis,To Kill a Mockingbird,3.9,74
+922,J.R.R. Tolkien,Mrs. Dalloway,4.7,64
+923,Mark Twain,Murder on the Orient Express,3.2,68
+924,Jane Austen,The Great Gatsby,4.2,29
+925,Agatha Christie,The Handmaid's Tale,4.2,92
+926,Dan Brown,The Hobbit,3.5,63
+927,George R.R. Martin,Murder on the Orient Express,4.1,66
+928,George R.R. Martin,The Old Man and the Sea,3.3,39
+929,Ray Bradbury,The Handmaid's Tale,3.5,96
+930,Malcolm Gladwell,Murder on the Orient Express,3.1,31
+931,Ernest Hemingway,The Chronicles of Narnia,4.9,81
+932,John Grisham,The Firm,3.1,14
+933,C.S. Lewis,The Kite Runner,4.2,16
+934,C.S. Lewis,The Handmaid's Tale,4,30
+935,Harper Lee,Fahrenheit 451,4.7,18
+936,Margaret Atwood,The Adventures of Tom Sawyer,4.1,46
+937,J.R.R. Tolkien,The Chronicles of Narnia,4.5,58
+938,Isaac Asimov,The Handmaid's Tale,4.3,72
+939,F. Scott Fitzgerald,The Shining,3.8,94
+940,Ernest Hemingway,Angels & Demons,3.3,70
+941,Ernest Hemingway,Oliver Twist,3.5,7
+942,Margaret Atwood,Oliver Twist,3,7
+943,Margaret Atwood,Pride and Prejudice,3.9,13
+944,J.K. Rowling,Foundation,4.2,9
+945,Jane Austen,Angels & Demons,4.9,50
+946,Charles Dickens,To Kill a Mockingbird,4.3,76
+947,Ray Bradbury,Murder on the Orient Express,4.2,52
+948,Khaled Hosseini,To Kill a Mockingbird,3.1,70
+949,John Grisham,Foundation,3.4,83
+950,Harper Lee,The Great Gatsby,4.7,19
+951,Stephen King,Oliver Twist,4.5,52
+952,Dan Brown,The Great Gatsby,5,5
+953,Agatha Christie,The Hobbit,4.3,82
+954,John Grisham,Murder on the Orient Express,4.7,29
+955,John Grisham,The Hobbit,3.8,79
+956,Khaled Hosseini,The Great Gatsby,4.8,36
+957,F. Scott Fitzgerald,Oliver Twist,4.8,39
+958,Mark Twain,Murder on the Orient Express,3.1,21
+959,Stephen King,The Firm,3.5,61
+960,F. Scott Fitzgerald,The Firm,3.2,96
+961,J.K. Rowling,The Handmaid's Tale,3.8,57
+962,Isaac Asimov,The Old Man and the Sea,3.8,71
+963,Margaret Atwood,A Game of Thrones,4.5,23
+964,J.R.R. Tolkien,The Hobbit,3.2,10
+965,Isaac Asimov,Foundation,4.9,73
+966,Ray Bradbury,Murder on the Orient Express,4,59
+967,Charles Dickens,The Great Gatsby,4.2,2
+968,Malcolm Gladwell,Murder on the Orient Express,4.9,17
+969,George R.R. Martin,Outliers,5,90
+970,F. Scott Fitzgerald,Murder on the Orient Express,4.7,11
+971,Virginia Woolf,Mrs. Dalloway,3.8,18
+972,Khaled Hosseini,Pride and Prejudice,4.3,70
+973,Agatha Christie,The Old Man and the Sea,3.3,31
+974,J.R.R. Tolkien,Foundation,5,69
+975,Dan Brown,The Chronicles of Narnia,3.9,96
+976,J.R.R. Tolkien,Murder on the Orient Express,3.2,79
+977,Agatha Christie,The Great Gatsby,3.7,36
+978,Agatha Christie,Angels & Demons,3.5,43
+979,Ernest Hemingway,The Adventures of Tom Sawyer,3.6,75
+980,Mark Twain,The Old Man and the Sea,3.9,41
+981,Ernest Hemingway,To Kill a Mockingbird,3.2,31
+982,Ray Bradbury,Outliers,4.9,98
+983,J.K. Rowling,Mrs. Dalloway,3.5,73
+984,Malcolm Gladwell,The Sorcerer's Stone,3.6,81
+985,Ray Bradbury,The Chronicles of Narnia,4,30
+986,Mark Twain,The Shining,3.9,79
+987,Isaac Asimov,Murder on the Orient Express,4.9,1
+988,Virginia Woolf,Foundation,3.7,86
+989,J.K. Rowling,Fahrenheit 451,4.7,59
+990,John Grisham,The Firm,3,91
+991,Ernest Hemingway,To Kill a Mockingbird,5,65
+992,Agatha Christie,Mrs. Dalloway,4.3,90
+993,C.S. Lewis,The Old Man and the Sea,3.3,98
+994,F. Scott Fitzgerald,Fahrenheit 451,4.3,83
+995,Virginia Woolf,Murder on the Orient Express,3.4,56
+996,Stephen King,Angels & Demons,3.7,50
+997,Malcolm Gladwell,Murder on the Orient Express,4.2,47
+998,Stephen King,The Old Man and the Sea,3.3,52
+999,George R.R. Martin,Foundation,3.7,19
+1000,Virginia Woolf,The Kite Runner,3.9,14

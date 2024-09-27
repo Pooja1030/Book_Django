@@ -10,5 +10,5 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
     path('messages/send/', SendMessageView.as_view(), name='send-message'),
     path('messages/', GetMessagesView.as_view(), name='get-messages'),
-     path('gemini/predict/', GeminiPredictionView.as_view(), name='gemini-predict'), 
+    path('gemini/predict/', GeminiPredictionView.as_view(), name='gemini-predict'), 
 ]

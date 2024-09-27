@@ -47,12 +47,11 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        fields = ['id', 'title', 'author_id', 'price', 'rating', 'stock']
+        fields = ['id', ' book_name ', 'author_name', 'stock', 'rating']
 
 
-#Gemini Prediction
+
+# Gemini Prediction
 class GeminiPredictionSerializer(serializers.Serializer):
-    input_data = serializers.ListField(
-        child=serializers.FloatField()
-    )
+    book_id = serializers.PrimaryKeyRelatedField(queryset=Book.objects.all())
     prediction = serializers.FloatField(read_only=True)

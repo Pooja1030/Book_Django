@@ -12,12 +12,11 @@ services:
 
   web:
     build: .
-    command:  sh -c "python manage.py migrate &&
+    command: sh -c "python manage.py migrate &&
          python manage.py collectstatic --noinput &&
          gunicorn book_project.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - .:/app
-      - ./firebase-adminsdk.json:/app/firebase-adminsdk.json 
     env_file:
       - .env
     ports:
@@ -32,7 +31,7 @@ services:
       - DB_HOST=db
       - DB_PORT=5432
       - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,*.yourdomain.com
-      - GOOGLE_APPLICATION_CREDENTIALS=/app/firebase-adminsdk.json 
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/firebase/firebase-adminsdk.json
 
 volumes:
   postgres_data:

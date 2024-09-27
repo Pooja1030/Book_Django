@@ -10,19 +10,18 @@ COPY requirements.txt /app/
 # Install any dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-
 # Copy the rest of the application code into the container
 COPY . /app/
 
 # Copy the Firebase credentials into the container
-COPY firebase /app/firebase
-COPY book-b860d-4c401e9f8a95.json /app/
+COPY firebase/firebase-adminsdk.json /app/firebase/firebase-adminsdk.json
+COPY books/geminiaiintegration-74ba0e9e6da4.json /app/
 
+# Collect static files
 RUN python manage.py collectstatic --noinput
 
-ENV GOOGLE_APPLICATION_CREDENTIALS=/app/book-b860d-4c401e9f8a95.json
-
-
+# Set environment variable for Google application credentials
+ENV GOOGLE_APPLICATION_CREDENTIALS=/app/firebase/firebase-adminsdk.json
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
