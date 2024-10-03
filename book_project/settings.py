@@ -15,7 +15,8 @@ ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '*').split(',')
 
 
 # Gemini credentials
-GOOGLE_APPLICATION_CREDENTIALS = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'books/geminiaiintegration-74ba0e9e6da4.json /app/')
+# GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "your_default_api_key_here")
+# GOOGLE_APPLICATION_CREDENTIALS = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'books/geminiaiintegration-74ba0e9e6da4.json /app/')
 
 INSTALLED_APPS = [
     'django.contrib.admin',

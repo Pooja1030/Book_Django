@@ -47,11 +47,13 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        fields = ['id', ' book_name ', 'author_name', 'stock', 'rating']
+        fields = ['id', ' title ', 'author_id', 'stock', 'rating']
+
+class GenerateContentSerializer(serializers.Serializer):
+    text = serializers.CharField(required=False, default="Explain how AI works")
 
 
-
-# Gemini Prediction
-class GeminiPredictionSerializer(serializers.Serializer):
-    book_id = serializers.PrimaryKeyRelatedField(queryset=Book.objects.all())
-    prediction = serializers.FloatField(read_only=True)
+# # Gemini Prediction
+# class GeminiPredictionSerializer(serializers.Serializer):
+#     book_id = serializers.PrimaryKeyRelatedField(queryset=Book.objects.all())
+#     prediction = serializers.FloatField(read_only=True)
