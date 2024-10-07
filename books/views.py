@@ -193,3 +193,73 @@ class GenerateContentView(APIView):
 
 
 
+from rest_framework.decorators import api_view
+@api_view(['GET'])
+def geocode_address(request):
+    address = request.query_params.get('address')
+
+    if not address:
+        return Response({'error': 'Address is required.'}, status=400)
+
+    # Geocode the address to get latitude and longitude
+    geocode_url = f'https://google-map-places.p.rapidapi.com/maps/api/geocode/json?address={address}&language=en'
+    geocode_headers = {
+        'x-rapidapi-host': 'google-map-places.p.rapidapi.com',
+        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')
+    }
+
+    geocode_response = requests.get(geocode_url, headers=geocode_headers)
+
+    if geocode_response.status_code == 200:
+        geocode_data = geocode_response.json()
+        if geocode_data['results']:
+            location = geocode_data['results'][0]['geometry']['location']
+            lat = location['lat']
+            lon = location['lng']
+
+            # Call the nearby search API using the latitude and longitude, limit to top 5 places
+            nearby_places = get_nearby_places(lat, lon, limit=5)
+
+            return Response({
+                'location': location,
+                'nearby_places': nearby_places
+            }, status=200)
+        else:
+            return Response({'error': 'No results found for the provided address.'}, status=404)
+    else:
+        logger.error(f'Geocode error: {geocode_response.status_code} {geocode_response.text}')
+        return Response({'error': 'Failed to fetch geocode data'}, status=geocode_response.status_code)
+
+def get_nearby_places(lat, lon, limit=5):
+    nearby_search_url = "https://google-map-places.p.rapidapi.com/maps/api/place/nearbysearch/json"
+    nearby_headers = {
+        'x-rapidapi-host': 'google-map-places.p.rapidapi.com',
+        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # Ensure RAPIDAPI_KEY is set in .env
+    }
+    nearby_params = {
+        'location': f'{lat},{lon}',  # Latitude and Longitude from geocoding
+        'radius': '1500',  # Search radius in meters
+        'type': 'restaurant'  # Specify the type of places you're interested in (optional)
+    }
+
+    nearby_response = requests.get(nearby_search_url, headers=nearby_headers, params=nearby_params)
+
+    if nearby_response.status_code == 200:
+        nearby_data = nearby_response.json()
+        places = nearby_data.get('results', [])
+        
+        # Limit the results to the top 'limit' places (default is 5)
+        limited_places = places[:limit]
+
+        # Optionally, filter only the necessary fields for a clean response
+        return [
+            {
+                'name': place.get('name'),
+                'vicinity': place.get('vicinity'),
+                'rating': place.get('rating')
+            }
+            for place in limited_places
+        ]
+    else:
+        logger.error(f'Nearby places error: {nearby_response.status_code} {nearby_response.text}')
+        return {'error': 'Failed to fetch nearby places'}
