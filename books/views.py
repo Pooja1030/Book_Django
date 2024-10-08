@@ -16,6 +16,8 @@ import os
 import requests
 from rest_framework.response import Response
 from dotenv import load_dotenv
+from rest_framework.decorators import api_view
+
 
 db = firestore.client()
 load_dotenv()
@@ -191,75 +193,48 @@ class GenerateContentView(APIView):
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)   
 
 
-
-
-from rest_framework.decorators import api_view
+   
 @api_view(['GET'])
-def geocode_address(request):
-    address = request.query_params.get('address')
+def search_events(request):
+    location = request.query_params.get('location', 'New York')  # Default location if none provided
+    keyword = request.query_params.get('keyword', '')  # Optional keyword for the search
 
-    if not address:
-        return Response({'error': 'Address is required.'}, status=400)
-
-    # Geocode the address to get latitude and longitude
-    geocode_url = f'https://google-map-places.p.rapidapi.com/maps/api/geocode/json?address={address}&language=en'
-    geocode_headers = {
-        'x-rapidapi-host': 'google-map-places.p.rapidapi.com',
-        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')
+    # Replace this with the actual endpoint for searching events
+    events_search_url = 'https://real-time-events-search.p.rapidapi.com/search-events'
+    events_headers = {
+        'x-rapidapi-host': 'real-time-events-search.p.rapidapi.com',
+        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # Make sure RAPIDAPI_KEY is set in your environment
+    }
+    events_params = {
+        'location': location,
+        'query': keyword,
+        'limit': '5'  # Limit results to top 5 events
     }
 
-    geocode_response = requests.get(geocode_url, headers=geocode_headers)
+    events_response = requests.get(events_search_url, headers=events_headers, params=events_params)
 
-    if geocode_response.status_code == 200:
-        geocode_data = geocode_response.json()
-        if geocode_data['results']:
-            location = geocode_data['results'][0]['geometry']['location']
-            lat = location['lat']
-            lon = location['lng']
-
-            # Call the nearby search API using the latitude and longitude, limit to top 5 places
-            nearby_places = get_nearby_places(lat, lon, limit=5)
-
-            return Response({
-                'location': location,
-                'nearby_places': nearby_places
-            }, status=200)
-        else:
-            return Response({'error': 'No results found for the provided address.'}, status=404)
+    if events_response.status_code == 200:
+        events_data = events_response.json()
+        return Response(events_data, status=200)
     else:
-        logger.error(f'Geocode error: {geocode_response.status_code} {geocode_response.text}')
-        return Response({'error': 'Failed to fetch geocode data'}, status=geocode_response.status_code)
+        logger.error(f'Events search error: {events_response.status_code} {events_response.text}')
+        return Response({'error': 'Failed to fetch events'}, status=events_response.status_code)
 
-def get_nearby_places(lat, lon, limit=5):
-    nearby_search_url = "https://google-map-places.p.rapidapi.com/maps/api/place/nearbysearch/json"
-    nearby_headers = {
-        'x-rapidapi-host': 'google-map-places.p.rapidapi.com',
-        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # Ensure RAPIDAPI_KEY is set in .env
-    }
-    nearby_params = {
-        'location': f'{lat},{lon}',  # Latitude and Longitude from geocoding
-        'radius': '1500',  # Search radius in meters
-        'type': 'restaurant'  # Specify the type of places you're interested in (optional)
+
+
+def get_event_details(request, event_id):
+    # Replace this with the actual endpoint for getting event details
+    event_details_url = f'https://real-time-events-search.p.rapidapi.com/event-details/{event_id}'
+    event_details_headers = {
+        'x-rapidapi-host': 'real-time-events-search.p.rapidapi.com',
+        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # Make sure RAPIDAPI_KEY is set in your environment
     }
 
-    nearby_response = requests.get(nearby_search_url, headers=nearby_headers, params=nearby_params)
+    event_details_response = requests.get(event_details_url, headers=event_details_headers)
 
-    if nearby_response.status_code == 200:
-        nearby_data = nearby_response.json()
-        places = nearby_data.get('results', [])
-        
-        # Limit the results to the top 'limit' places (default is 5)
-        limited_places = places[:limit]
-
-        # Optionally, filter only the necessary fields for a clean response
-        return [
-            {
-                'name': place.get('name'),
-                'vicinity': place.get('vicinity'),
-                'rating': place.get('rating')
-            }
-            for place in limited_places
-        ]
+    if event_details_response.status_code == 200:
+        event_details_data = event_details_response.json()
+        return Response(event_details_data, status=200)
     else:
-        logger.error(f'Nearby places error: {nearby_response.status_code} {nearby_response.text}')
-        return {'error': 'Failed to fetch nearby places'}
+        logger.error(f'Event details error: {event_details_response.status_code} {event_details_response.text}')
+        return Response({'error': 'Failed to fetch event details'}, status=event_details_response.status_code)

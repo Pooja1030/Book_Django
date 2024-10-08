@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AuthorListCreate, BookListCreate, UserRegistrationView,LogoutView, SendMessageView, GetMessagesView, GenerateContentView,geocode_address
+from .views import AuthorListCreate, BookListCreate, UserRegistrationView,LogoutView, SendMessageView, GetMessagesView, GenerateContentView,search_events, get_event_details
 
 
 urlpatterns = [
@@ -11,6 +11,7 @@ urlpatterns = [
     path('messages/send/', SendMessageView.as_view(), name='send-message'),
     path('messages/', GetMessagesView.as_view(), name='get-messages'),
     path('generate-content/', GenerateContentView.as_view(), name='generate-content'),
-   path('geocode_address/', geocode_address, name='geocode_address'),
+    path('events/search/', search_events, name='search_events'),
+    path('events/<int:event_id>/', get_event_details, name='get_event_details'),
 
 ]
