@@ -196,19 +196,19 @@ class GenerateContentView(APIView):
    
 @api_view(['GET'])
 def search_events(request):
-    location = request.query_params.get('location', 'New York')  # Default location if none provided
-    keyword = request.query_params.get('keyword', '')  # Optional keyword for the search
+    location = request.query_params.get('location', 'New York')  
+    keyword = request.query_params.get('keyword', '') 
 
-    # Replace this with the actual endpoint for searching events
+    # endpoint for searching events
     events_search_url = 'https://real-time-events-search.p.rapidapi.com/search-events'
     events_headers = {
         'x-rapidapi-host': 'real-time-events-search.p.rapidapi.com',
-        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # Make sure RAPIDAPI_KEY is set in your environment
+        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  #setting the RAPIDAPI_KEY in environment
     }
     events_params = {
         'location': location,
         'query': keyword,
-        'limit': '5'  # Limit results to top 5 events
+        'limit': '5'  
     }
 
     events_response = requests.get(events_search_url, headers=events_headers, params=events_params)
@@ -223,11 +223,11 @@ def search_events(request):
 
 
 def get_event_details(request, event_id):
-    # Replace this with the actual endpoint for getting event details
+    #endpoint for getting event details
     event_details_url = f'https://real-time-events-search.p.rapidapi.com/event-details/{event_id}'
     event_details_headers = {
         'x-rapidapi-host': 'real-time-events-search.p.rapidapi.com',
-        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # Make sure RAPIDAPI_KEY is set in your environment
+        'x-rapidapi-key': os.getenv('RAPIDAPI_KEY')  # setting the RAPIDAPI_KEY in environment
     }
 
     event_details_response = requests.get(event_details_url, headers=event_details_headers)
