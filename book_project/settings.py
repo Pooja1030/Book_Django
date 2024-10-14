@@ -2,6 +2,8 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 from datetime import timedelta
+from google.oauth2 import service_account
+
 
 load_dotenv()
 
@@ -12,7 +14,29 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key')
 DEBUG = True
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '*').split(',')
+# Set the path to your service account JSON file
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Update the path to be relative to BASE_DIR
+GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
+    os.path.join(BASE_DIR, 'books', 'geminiaiintegration-74ba0e9e6da4.json')
+)
+
+# Your bucket name
+GS_BUCKET_NAME = 'geminiaiproject1'
+
+# Static and Media settings for Google Cloud Storage
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+
+# # Static and Media root URLs
+GS_STATIC_BUCKET_NAME = 'geminiaiproject1'  # Adjust if using a separate bucket for static files
+GS_MEDIA_BUCKET_NAME = 'geminiaiproject1'   # Adjust if using a separate bucket for media files
+
+STATIC_URL = f'https://storage.googleapis.com/{GS_STATIC_BUCKET_NAME}/static/'
+MEDIA_URL = f'https://storage.googleapis.com/{GS_MEDIA_BUCKET_NAME}/media/'
+
+# Additional configuration for file uploads or any related settings
 
 # Gemini credentials
 # GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "your_default_api_key_here")
@@ -29,6 +53,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'books',
     'firebase',
+    'storages',
 ]
 
 MIDDLEWARE = [

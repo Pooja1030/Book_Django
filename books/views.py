@@ -238,3 +238,12 @@ def get_event_details(request, event_id):
     else:
         logger.error(f'Event details error: {event_details_response.status_code} {event_details_response.text}')
         return Response({'error': 'Failed to fetch event details'}, status=event_details_response.status_code)
+    
+
+@api_view(['POST'])
+def upload_book(request):
+    serializer = BookSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()  # Save the book instance (including the file)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

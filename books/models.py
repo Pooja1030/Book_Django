@@ -15,6 +15,7 @@ class Book(models.Model):
     # price = models.DecimalField(max_digits=10, decimal_places=2)
     rating = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True)
     stock = models.IntegerField(default=0)
+    file = models.FileField(upload_to='books/', null=True, blank=True)  # FileField to upload files
 
     def __str__(self):
         return self.title

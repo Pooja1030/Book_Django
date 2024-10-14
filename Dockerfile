@@ -15,7 +15,9 @@ COPY . /app/
 
 # Copy the Firebase credentials into the container
 COPY firebase/firebase-adminsdk.json /app/firebase/firebase-adminsdk.json
-COPY books/geminiaiintegration-74ba0e9e6da4.json /app/
+COPY books/geminiaiintegration-74ba0e9e6da4.json /app/book_project/books/
+
+# COPY books/geminiaiintegration-74ba0e9e6da4.json /app/
 
 # Collect static files
 RUN python manage.py collectstatic --noinput
