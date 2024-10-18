@@ -17,6 +17,7 @@ import requests
 from rest_framework.response import Response
 from dotenv import load_dotenv
 from rest_framework.decorators import api_view
+from .image_utils import optimize_image  # Import the optimization function
 
 
 db = firestore.client()
@@ -140,6 +141,21 @@ class BookListCreate(generics.ListCreateAPIView):
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticated]
 
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        # Check if the file exists and optimize it
+        file = request.FILES.get('file')
+        if file:
+            optimized_file = optimize_image(file)  # Optimize the image
+            serializer.validated_data['file'] = optimized_file  # Replace original file with optimized one
+
+        self.perform_create(serializer)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+
+    
 class BookRetrieveUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
