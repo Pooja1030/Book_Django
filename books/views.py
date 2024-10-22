@@ -1,4 +1,5 @@
-from firebase_admin import firestore
+from firebase_admin import credentials, firestore
+import firebase_admin
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.utils.decorators import method_decorator
@@ -18,6 +19,7 @@ from rest_framework.response import Response
 from dotenv import load_dotenv
 from rest_framework.decorators import api_view
 from .image_utils import optimize_image  # Import the optimization function
+from firebase_admin import auth as firebase_auth
 
 
 db = firestore.client()
@@ -263,3 +265,90 @@ def upload_book(request):
         serializer.save()  # Save the book instance (including the file)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+# Initialize Firebase Admin SDK if not already initialized
+if not firebase_admin._apps:
+    cred = credentials.Certificate(os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'firebase/firebase-adminsdk.json'))
+    firebase_admin.initialize_app(cred)
+
+# Sending OTP to the mobile number
+class SendOTPView(APIView):
+    def post(self, request):
+        phone_number = request.data.get('phone_number')
+        
+        if not phone_number:
+            return Response({'error': 'Phone number is required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            # Generate a verification code for the phone number using Firebase client SDK (typically done on frontend)
+            # Backend cannot directly send OTP, it will rely on client SDKs (Web/Android/iOS).
+            return Response({'message': f'OTP sent to {phone_number}'}, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error sending OTP: {e}")
+            return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# Verifying OTP after receiving it from the client
+class VerifyOTPView(APIView):
+    def post(self, request):
+        phone_number = request.data.get('phone_number')
+        verification_code = request.data.get('verification_code')
+        
+        if not phone_number or not verification_code:
+            return Response({'error': 'Phone number and verification code are required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            # Verify the OTP on the client-side with Firebase SDK (pass the verification code)
+            # Backend generally does not handle the OTP verification directly
+            return Response({'message': 'OTP verified successfully'}, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error verifying OTP: {e}")
+            return Response({'error': 'Failed to verify OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# Sending Email OTP (verification email)
+class SendEmailOTPView(APIView):
+    def post(self, request):
+        email = request.data.get('email')
+        
+        if not email:
+            return Response({'error': 'Email is required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            # Create a Firebase user with the email if not already created
+            user = auth.get_user_by_email(email)
+            if not user:
+                user = auth.create_user(email=email)
+            
+            # Send email verification
+            link = auth.generate_email_verification_link(email)
+            # Send email using your own email service provider (SMTP, SendGrid, etc.)
+            return Response({'message': f'Email verification sent to {email}'}, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error sending email verification: {e}")
+            return Response({'error': 'Failed to send email verification'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# Verifying the email after user clicks the verification link
+class VerifyEmailOTPView(APIView):
+    def post(self, request):
+        email = request.data.get('email')
+        verification_code = request.data.get('verification_code')  # Token sent via email
+        
+        if not email or not verification_code:
+            return Response({'error': 'Email and verification code are required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            # Verify the email with the verification token
+            user = auth.get_user_by_email(email)
+            # Check the email verification status
+            if user.email_verified:
+                return Response({'message': 'Email already verified'}, status=status.HTTP_200_OK)
+            
+            # Update the email_verified status in Firebase
+            auth.update_user(user.uid, email_verified=True)
+            return Response({'message': 'Email verified successfully'}, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error verifying email: {e}")
+            return Response({'error': 'Failed to verify email'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

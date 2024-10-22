@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AuthorListCreate, BookListCreate, UserRegistrationView,LogoutView, SendMessageView, GetMessagesView, GenerateContentView,search_events, get_event_details,upload_book
+from .views import AuthorListCreate, BookListCreate, UserRegistrationView,LogoutView, SendMessageView, GetMessagesView, GenerateContentView,search_events, get_event_details,upload_book,SendOTPView, VerifyOTPView, SendEmailOTPView, VerifyEmailOTPView
 
 
 urlpatterns = [
@@ -14,4 +14,9 @@ urlpatterns = [
     path('events/search/', search_events, name='search_events'),
     path('events/<int:event_id>/', get_event_details, name='get_event_details'),
     path('upload/', upload_book, name='upload-book'),
+     # OTP and Email verification
+    path('auth/send-otp/', SendOTPView.as_view(), name='send-otp'),
+    path('auth/verify-otp/', VerifyOTPView.as_view(), name='verify-otp'),
+    path('auth/send-email-otp/', SendEmailOTPView.as_view(), name='send-email-otp'),
+    path('auth/verify-email-otp/', VerifyEmailOTPView.as_view(), name='verify-email-otp'),
 ]
